@@ -13,6 +13,14 @@
 		EEBE4C5B1C565A2C00E8BD24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEBE4C591C565A2C00E8BD24 /* Main.storyboard */; };
 		EEBE4C5D1C565A2C00E8BD24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEBE4C5C1C565A2C00E8BD24 /* Assets.xcassets */; };
 		EEBE4C601C565A2C00E8BD24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEBE4C5E1C565A2C00E8BD24 /* LaunchScreen.storyboard */; };
+		EEBE4C6B1C565D1E00E8BD24 /* source.json in Resources */ = {isa = PBXBuildFile; fileRef = EEBE4C6A1C565D1E00E8BD24 /* source.json */; };
+		EEBE4C6E1C5660CA00E8BD24 /* FetchData.m in Sources */ = {isa = PBXBuildFile; fileRef = EEBE4C6D1C5660CA00E8BD24 /* FetchData.m */; };
+		EEBE4C721C56807900E8BD24 /* PartInformationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EEBE4C711C56807900E8BD24 /* PartInformationTableViewCell.m */; };
+		EEBE4C781C56821600E8BD24 /* CarsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEBE4C771C56821600E8BD24 /* CarsTableViewController.m */; };
+		EEBE4C7B1C569EA400E8BD24 /* NameLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEBE4C7A1C569EA400E8BD24 /* NameLoginViewController.m */; };
+		EEBE4C7E1C569FE600E8BD24 /* FullInformationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EEBE4C7D1C569FE600E8BD24 /* FullInformationTableViewCell.m */; };
+		EEBE4C811C56C76700E8BD24 /* MyCellPartData.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEBE4C801C56C76700E8BD24 /* MyCellPartData.xib */; };
+		EEBE4C831C56C85300E8BD24 /* MyCellFullData.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEBE4C821C56C85300E8BD24 /* MyCellFullData.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +34,20 @@
 		EEBE4C5C1C565A2C00E8BD24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EEBE4C5F1C565A2C00E8BD24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EEBE4C611C565A2C00E8BD24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEBE4C6A1C565D1E00E8BD24 /* source.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = source.json; sourceTree = "<group>"; };
+		EEBE4C6C1C5660CA00E8BD24 /* FetchData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FetchData.h; sourceTree = "<group>"; };
+		EEBE4C6D1C5660CA00E8BD24 /* FetchData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FetchData.m; sourceTree = "<group>"; };
+		EEBE4C701C56807900E8BD24 /* PartInformationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PartInformationTableViewCell.h; sourceTree = "<group>"; };
+		EEBE4C711C56807900E8BD24 /* PartInformationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PartInformationTableViewCell.m; sourceTree = "<group>"; };
+		EEBE4C761C56821600E8BD24 /* CarsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarsTableViewController.h; sourceTree = "<group>"; };
+		EEBE4C771C56821600E8BD24 /* CarsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarsTableViewController.m; sourceTree = "<group>"; };
+		EEBE4C791C569EA400E8BD24 /* NameLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NameLoginViewController.h; sourceTree = "<group>"; };
+		EEBE4C7A1C569EA400E8BD24 /* NameLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NameLoginViewController.m; sourceTree = "<group>"; };
+		EEBE4C7C1C569FE600E8BD24 /* FullInformationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FullInformationTableViewCell.h; sourceTree = "<group>"; };
+		EEBE4C7D1C569FE600E8BD24 /* FullInformationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FullInformationTableViewCell.m; sourceTree = "<group>"; };
+		EEBE4C7F1C56BB0D00E8BD24 /* OwnerNameDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OwnerNameDelegate.h; sourceTree = "<group>"; };
+		EEBE4C801C56C76700E8BD24 /* MyCellPartData.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCellPartData.xib; sourceTree = "<group>"; };
+		EEBE4C821C56C85300E8BD24 /* MyCellFullData.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MyCellFullData.xib; path = ../MyCellFullData.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +80,16 @@
 		EEBE4C4F1C565A2C00E8BD24 /* TestTaskWithJSON */ = {
 			isa = PBXGroup;
 			children = (
+				EEBE4C6F1C56802B00E8BD24 /* Controllers */,
+				EEBE4C691C565CD900E8BD24 /* DataSource */,
 				EEBE4C531C565A2C00E8BD24 /* AppDelegate.h */,
 				EEBE4C541C565A2C00E8BD24 /* AppDelegate.m */,
 				EEBE4C561C565A2C00E8BD24 /* ViewController.h */,
 				EEBE4C571C565A2C00E8BD24 /* ViewController.m */,
 				EEBE4C591C565A2C00E8BD24 /* Main.storyboard */,
+				EEBE4C801C56C76700E8BD24 /* MyCellPartData.xib */,
+				EEBE4C821C56C85300E8BD24 /* MyCellFullData.xib */,
+				EEBE4C7F1C56BB0D00E8BD24 /* OwnerNameDelegate.h */,
 				EEBE4C5C1C565A2C00E8BD24 /* Assets.xcassets */,
 				EEBE4C5E1C565A2C00E8BD24 /* LaunchScreen.storyboard */,
 				EEBE4C611C565A2C00E8BD24 /* Info.plist */,
@@ -77,6 +104,31 @@
 				EEBE4C511C565A2C00E8BD24 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EEBE4C691C565CD900E8BD24 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				EEBE4C6A1C565D1E00E8BD24 /* source.json */,
+				EEBE4C6C1C5660CA00E8BD24 /* FetchData.h */,
+				EEBE4C6D1C5660CA00E8BD24 /* FetchData.m */,
+			);
+			name = DataSource;
+			sourceTree = "<group>";
+		};
+		EEBE4C6F1C56802B00E8BD24 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EEBE4C701C56807900E8BD24 /* PartInformationTableViewCell.h */,
+				EEBE4C711C56807900E8BD24 /* PartInformationTableViewCell.m */,
+				EEBE4C761C56821600E8BD24 /* CarsTableViewController.h */,
+				EEBE4C771C56821600E8BD24 /* CarsTableViewController.m */,
+				EEBE4C791C569EA400E8BD24 /* NameLoginViewController.h */,
+				EEBE4C7A1C569EA400E8BD24 /* NameLoginViewController.m */,
+				EEBE4C7C1C569FE600E8BD24 /* FullInformationTableViewCell.h */,
+				EEBE4C7D1C569FE600E8BD24 /* FullInformationTableViewCell.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +188,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEBE4C6B1C565D1E00E8BD24 /* source.json in Resources */,
 				EEBE4C601C565A2C00E8BD24 /* LaunchScreen.storyboard in Resources */,
+				EEBE4C831C56C85300E8BD24 /* MyCellFullData.xib in Resources */,
 				EEBE4C5D1C565A2C00E8BD24 /* Assets.xcassets in Resources */,
+				EEBE4C811C56C76700E8BD24 /* MyCellPartData.xib in Resources */,
 				EEBE4C5B1C565A2C00E8BD24 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -149,8 +204,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEBE4C721C56807900E8BD24 /* PartInformationTableViewCell.m in Sources */,
+				EEBE4C781C56821600E8BD24 /* CarsTableViewController.m in Sources */,
 				EEBE4C581C565A2C00E8BD24 /* ViewController.m in Sources */,
 				EEBE4C551C565A2C00E8BD24 /* AppDelegate.m in Sources */,
+				EEBE4C6E1C5660CA00E8BD24 /* FetchData.m in Sources */,
+				EEBE4C7E1C569FE600E8BD24 /* FullInformationTableViewCell.m in Sources */,
+				EEBE4C7B1C569EA400E8BD24 /* NameLoginViewController.m in Sources */,
 				EEBE4C521C565A2C00E8BD24 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

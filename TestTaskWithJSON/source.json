@@ -1,0 +1,83 @@
+[
+ {
+ "typeOfCar":"car",
+ "nameOfCar" : "BMW",
+ "color":"red",
+ "state" : "used",
+ "nameOfOwner" : "Vasia",
+ "phone" : "+380453214567",
+ 
+ },
+ {
+ "typeOfCar":"car",
+ "nameOfCar" : "Moskvich",
+ "color":"black",
+ "state" : "new",
+ "nameOfOwner" : "Kolia",
+ "phone" : "+380677777777",
+ 
+ },
+ {
+ "typeOfCar":"car",
+ "nameOfCar" : "Zapor",
+ "color":"yellow",
+ "state" : "new",
+ "nameOfOwner" : "Petia",
+ "phone" : "+380453214567",
+ 
+ },
+ {
+ "typeOfCar":"car",
+ "nameOfCar" : "Jigule",
+ "color":"white",
+ "state" : "used",
+ "nameOfOwner" : "Vasia",
+ "phone" : "+380464443212",
+ 
+ },
+ {
+ "typeOfCar":"car",
+ "nameOfCar" : "Mersedes",
+ "color":"blue",
+ "state" : "used",
+ "nameOfOwner" : "Jou",
+ "phone" : "+134567892",
+ 
+ },
+ {
+ "typeOfCar":"car",
+ "nameOfCar" : "ford",
+ "color":"brown",
+ "state" : "used",
+ "nameOfOwner" : "Silvia",
+ "phone" : "+4567832874",
+ 
+ },
+ {
+ "typeOfCar":"car",
+ "nameOfCar" : "BMW",
+ "color":"red",
+ "state" : "new",
+ "nameOfOwner" : "Ivan",
+ "phone" : "+38044444444",
+ 
+ },
+ {
+ "typeOfCar":"car",
+ "nameOfCar" : "Toyota",
+ "color":"red",
+ "state" : "used",
+ "nameOfOwner" : "Lusia",
+ "phone" : "+380323214578",
+ 
+ },
+ {
+ "typeOfCar":"car",
+ "nameOfCar" : "Isuzu",
+ "color":"grey",
+ "state" : "used",
+ "nameOfOwner" : "Semen",
+ "phone" : "+380453217621",
+ 
+ }
+]
