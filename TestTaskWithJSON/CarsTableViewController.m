@@ -9,13 +9,13 @@
 #import "CarsTableViewController.h"
 #import "FetchData.h"
 #import "PartInformationTableViewCell.h"
-#import "FullInformationTableViewCell.h"
 #import "NameLoginViewController.h"
 
 @interface CarsTableViewController ()
 
 @property (nonatomic, strong) FetchData *data;
 @property (nonatomic, strong) NSString *nameOfUser;
+@property (nonatomic, strong) NSIndexPath * indexPathTape;
 
 @end
 
@@ -23,8 +23,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    _nameOfUser = [defaults objectForKey:@"name"];
     _data = [[FetchData alloc] init];
-    _nameOfUser = @"";
 }
 
 - (void)didReceiveMemoryWarning {
@@ -44,31 +45,58 @@
 }
 
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell;
-    if ([_nameOfUser isEqualToString:@""]) {
-        [tableView registerNib:[UINib nibWithNibName:@"MyCellPartData" bundle:nil] forCellReuseIdentifier:@"PartData"];
+- (PartInformationTableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
        PartInformationTableViewCell *partCell = [tableView dequeueReusableCellWithIdentifier:@"PartData" forIndexPath:indexPath];
+        [partCell.contentView.layer setBorderColor:[UIColor colorWithWhite: 0.70 alpha:1].CGColor];
+        [partCell.contentView.layer setBorderWidth:1.0f];
         [partCell setValueInCell:[_data fetchedItem:indexPath.row]];
-        cell = partCell;
-    }
-    else {
-        [tableView registerNib:[UINib nibWithNibName:@"MyCellFullData" bundle:nil] forCellReuseIdentifier:@"FullData"];
-       FullInformationTableViewCell *fullCell = [tableView dequeueReusableCellWithIdentifier:@"FullData" forIndexPath:indexPath];
-        [fullCell setValueInCellChild:[_data fetchedItem:indexPath.row]];
-        cell = fullCell;
-
-    }
-    
-    return cell;
+        return  partCell;
 }
 
 - (void) userNameIdentity:(NSString *) name {
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:name forKey:@"name"];
+    [defaults synchronize];
     _nameOfUser = name;
     [self.tableView reloadData];
     
 }
 
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    if (_nameOfUser == nil) {
+        UIAlertController * alert=   [UIAlertController
+                                      alertControllerWithTitle:@"Error"
+                                      message:@"You need authorization"
+                                      preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction* yesButton = [UIAlertAction
+                                    actionWithTitle:@"Ok"
+                                    style:UIAlertActionStyleDefault
+                                    handler:^(UIAlertAction * action)
+                                    {
+                                    }];
+        
+        
+        [alert addAction:yesButton];
+        
+        [self presentViewController:alert animated:YES completion:nil];
+    } else {
+               _indexPathTape = indexPath;
+    }
+    
+    [tableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+   
+    if(_indexPathTape != nil
+       && [_indexPathTape compare:indexPath] == NSOrderedSame)
+        return 105;
+    
+    return 70;
+}
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {

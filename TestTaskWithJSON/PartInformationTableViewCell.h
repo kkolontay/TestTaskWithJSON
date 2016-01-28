@@ -10,8 +10,6 @@
 
 @interface PartInformationTableViewCell : UITableViewCell
 
-- (void) initwithData:(UILabel *) type nameOfAuto:(UILabel *) name colorOfAuto:(UILabel *) color
-          stateOfAuto:(UILabel *) state;
 - (void) setValueInCell:(NSDictionary*) dictionary;
 
 @end
